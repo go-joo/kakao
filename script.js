@@ -34,12 +34,12 @@ function getList(){
             var lastPage=Math.ceil(data.meta.pageable_count/size);
             $("#spanPage").html(page+"/"+ lastPage);
             if(page==1){
-                $("#btnPre").attr("disalbled", ture);
+                $("#btnPre").attr("disalbled", true);
             }else{
                 $("#btnPre").attr("disalbled", false);
             }
             if(page==lastPage){
-                $("#btnNext").attr("disalbled", ture);
+                $("#btnNext").attr("disalbled", true);
             }else{
                 $("#btnNext").attr("disalbled", false);
             }
